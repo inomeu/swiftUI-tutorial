@@ -48,5 +48,6 @@ struct ContentView: View {//Viewの構造体一つ目（ビューのコンテン
 struct ContentView_Previews: PreviewProvider {//Viewの構造体二つ目（ビューのプレビュー宣言）
     static var previews: some View {
         ContentView()
+            .environmentObject(ModelData())
     }
 }
